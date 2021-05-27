@@ -1,0 +1,83 @@
+#sidebar {
+    .sidebar-brand {
+        color: $sidebar-brand;
+    }
+    .sidebar-wrap {
+        .sidebar-title {
+            color: $sidebar-title;
+        }
+        .sidebar-content {
+            .sidebar-link {
+                color: $sidebar-link;
+            }
+            .has-sub {
+                .sidebar-link {
+                    &::after {
+                        position: absolute;
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 600;
+                        content: '\f105';
+                        right: 0;
+                        transition: transform .2s ease;
+                    }
+                    &[aria-expanded='true']::after {
+                        transform: rotate(90deg);
+                    }
+                    &[aria-expanded='false']::after {
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+        }
+    }
+    .navbar-nav {
+        .sidebar-wrap {
+            padding: 1.15rem 0;
+            border-bottom: 1px solid rgba($color: #fff, $alpha: .1);
+            h6 {
+                font-size: .8rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                li {
+                    margin: .7rem 0;
+                    a {
+                        position: relative;
+                        display: block;
+                        text-decoration: none;
+                        font-size: .85rem;
+                        letter-spacing: 1px;
+                        span {
+                            width: 16px;
+                            text-align: center;
+                            display: inline-block;
+                            i {
+                            
+                            }
+                        }
+                        &:hover {
+                            color: rgb(189, 195, 199);
+                        }
+                    }
+                    .submenu {
+                        padding: .25rem 1.5rem;
+                        margin: .5rem 0;
+                        background: $submenu-bg;
+                        .submenu-link {
+                            display: block;
+                            margin: .5rem 0;
+                            color: $submenu-link;
+                            &:hover {
+                                color: rgb(189, 195, 199);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

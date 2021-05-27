@@ -1,0 +1,25 @@
+$sidebar-bg: rgb(30, 46, 64);
+$sidebar-brand: rgb(236, 240, 241);
+$sidebar-title: rgb(189, 195, 199);
+$sidebar-link: rgb(149, 165, 166);
+.sidebar-bg {
+    background: $sidebar-bg;
+}
+
+$submenu-bg: rgb(39, 56, 74);
+$submenu-link: rgb(149, 165, 166);
+
+$content-bg: rgb(240, 240, 240);
+
+$card-1: var(--bs-blue);
+$card-2: var(--bs-green);
+$card-3: var(--bs-yellow);
+$card-4: var(--bs-red);
+.card-1 { background: $card-1; }
+.card-2 { background: $card-2; }
+.card-3 { background: $card-3; }
+.card-4 { background: $card-4; }
+
+$darkmode-bg-nav:rgb(30, 46, 64);
+$darkmode-bg-content:rgb(29, 42, 55);
+$darkmode-color:rgb(255, 255, 255);
